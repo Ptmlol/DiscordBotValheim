@@ -5,7 +5,7 @@ import requests
 import time
 import calendar
 from enum import Enum
-from keep_alive import keep_alive
+
 
 load_dotenv()
 DISCORD_TOKEN = os.getenv("TOKEN")
@@ -282,5 +282,4 @@ async def on_ready():
     print('We have logged in as' + str(bot))
     init()
 
-keep_alive()
 bot.run(DISCORD_TOKEN)
